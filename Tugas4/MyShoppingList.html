@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+        <title>Shopping list</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-lg-5 fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/My-Icon.png" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0 m-1 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                <li class="nav-item ">
+                    <a class="btnNav nav-link active btn-dark mx-2 " href="Index.HTML">Kembali</a>
+                </li>
+                <li class="nav-item m">
+                    <a class="btnNav nav-link active btn-dark mx-2" href="sisfor.html">Prodi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btnNav nav-link active btn-dark mx-2" href="indonesia.html">Negara</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div id="btn-switch" class="switch-mode">
+            <img width="40px" src="https://cdn-icons-png.flaticon.com/512/5262/5262027.png">
+            <p>switch</p>
+          </div>
+        <div class="content-wrapper">
+            <div class="container mx-3 row">
+                    <input id="inputField" class="form-control me-2 float-start col" type="search" placeholder="Search" aria-label="Search">
+                <div class="col">
+                    <button id="listAddBtn" class="btn btn-outline-success col" type="submit">Tambahkan</button>
+                </div>    
+                <h4 class="pt-5">Daftar Belanjaan</h4>
+                <ul id="list" class="list-content">
+                    <!-- di isi menggunakan javascript -->
+                </ul>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white">
+            <div class="container py-2">
+                <p c lass="fs-6">Email : Ichsantakwa@gmail.com</p>
+                <p class="fs-6 mb-0">No.HP : 085256111322</p>
+            </div>
+        </footer>
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+        crossorigin="anonymous">
+        </script>
+        <script src="./js/script.js"></script>
+        <script src="./js/listManagement.js"></script>
+    </body>
+</html>
