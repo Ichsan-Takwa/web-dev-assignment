@@ -1,0 +1,148 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.switch-mode{
+    float: left;
+    position: fixed;
+    z-index: 3;
+    bottom: 6%;
+    left: 40px;
+    color: grey;
+    text-align: center;
+}
+
+.top-wrapper-profile{
+    height:60%;
+    background: linear-gradient(rgba(34, 34, 34, 0.281),rgba(0, 0, 0, 0.63)),url(../img/galaxy.jpg) fixed;
+    background-size: cover;
+    padding: 2% 4%;
+}
+
+.top-text{
+    color: white;
+    /* top: 14%; */
+    letter-spacing: 2px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.my-photo{
+    display: block;
+    position: relative;
+    /* float: left; */
+    /* left: 50%; */
+    margin: -12% auto; 
+    width: initial;
+    z-index: 3;
+}
+
+.features {
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 2;
+    /* margin-top: -11%; */
+}
+
+.feature a{
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+    line-height: 30px;
+    text-decoration: none;
+    width: 100%;
+    
+}
+
+.content-wrapper{
+    padding: 12%;
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.btnNav{
+    line-height: 35px;
+    width: 80px;
+    margin: 0;
+}
+.btnNav:hover{
+    background-color: rgb(105, 108, 110);
+}
+
+.navbar{
+    padding: 0;
+}
+
+
+/* country */
+
+.top-wrapper-country{
+    height:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)),url(../img/indonesian-flag.png) fixed;
+    background-size: cover;
+    z-index: -3;
+    position: relative;
+}
+
+/* prodi */
+
+.top-wrapper-sisfor{
+    height:100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.781),rgba(85, 84, 84, 0.473)),url(../img/sisfor-top.jpg) fixed;
+    background-size: cover;
+    z-index: -3;
+    position: relative;
+    font-size: xx-large;
+}
+
+/* list management */
+.list-content{
+    padding-bottom: 400px;   
+}
+.list-content .count, p, button {
+    display: inline-block;
+    font-size: 10px;
+}
+.btn-list-delete{
+    background-color: red;
+    color: white;
+    float: right;
+    line-height: 14px;
+    padding:  1px 3px;
+    margin: 0 20% 0 30px;    
+    border: 1px solid tomato;
+}
+.count{
+    float: right;
+    padding: 0 2px;
+    border: 1px solid rgb(83, 154, 212);
+}
+/* .count-edit */
+
+
+/* dark/light mode */
+.light{
+    background-color: honeydew;
+    color: black;
+}
+
+@media (max-width: 600px){
+    *{
+        font-size: xx-small;
+    }
+
+    .top-wrapper-profile .top-text{
+        margin-top: 30%;
+    }
+
+}
