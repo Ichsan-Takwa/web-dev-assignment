@@ -17,7 +17,7 @@ listAddBtn.addEventListener("click",() => {
         btnDelete.classList.add("btn-list-delete");
         btnDelete.textContent = "hapus";
         node.append(textNode,btnDelete);
-        if (window.location.pathname != "/ToDoList.html") {
+        if (document.title != "ToDO list") {
             
             let count = document.createElement("div");
             let add = document.createElement("button");
